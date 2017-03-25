@@ -11,7 +11,8 @@ var GoodGuy = require('good-guy-http');
 
 var diskCache = new DiskCache("my-cache");
 // 'my-cache' also serves as the global key for the cache.
-// if you have multiple programs with this same `cache-key` they will share the // same backing store. This by design.
+// if you have multiple programs with this same `cache-key` they will share the
+// same backing store. This by design.
 
 var goodGuy = GoodGuy({cache: diskCache});
 
