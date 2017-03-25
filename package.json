@@ -1,0 +1,30 @@
+{
+  "name": "good-guy-disk-cache",
+  "version": "1.0.0",
+  "description": "Async Disk Cache adapter for Good Guy HTTP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keithws/good-guy-disk-cache.git"
+  },
+  "keywords": [
+    "good-guy-http",
+    "async-disk-cache",
+    "promise",
+    "request",
+    "disk",
+    "cache",
+    "fs",
+    "good-guy",
+    "disk-cache"
+  ],
+  "author": "Keith W. Shaw <keith.w.shaw@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keithws/good-guy-disk-cache/issues"
+  },
+  "homepage": "https://github.com/keithws/good-guy-disk-cache#readme"
+}
