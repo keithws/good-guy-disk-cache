@@ -1,7 +1,7 @@
 # good-guy-disk-cache
-Disk cache adapter for [Good Guy HTTP][good-guy-http].
+Disk cache implementation for [Good Guy HTTP][good-guy-http].
 
-Cache your HTTP(S) requests like a gentleman. For use with Good Guy HTTP. Depends on [Async Disk Cache][async-disk-cache].
+Cache your HTTP(S) requests like a decent human-being. For use with Good Guy HTTP. Depends on [Async Disk Cache][async-disk-cache].
 
 ## Usage
 
