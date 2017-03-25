@@ -1,19 +1,24 @@
 const Cache = require("async-disk-cache");
-const cache = new Cache("good-guy-disk-cache");
 
-module.exports = {
-    store: function (key, object) {
+class DiskCache {
+    constructor(globalKey) {
+        if (!globalKey) {
+            throw new Error("Missing arguement");
+        }
+        this.cache = new Cache(globalKey);
+    }
+    store(key, object) {
         return new Promise(resolve => {
 
             let value = JSON.stringify(object);
-            resolve(cache.set(key, value));
+            resolve(this.cache.set(key, value));
 
         });
-    },
-    retrieve: function (key) {
+    }
+    retrieve(key) {
         return new Promise((resolve, reject) =>{
 
-            cache.get(key).then(cacheEntry => {
+            this.cache.get(key).then(cacheEntry => {
 
                 if (cacheEntry.isCached) {
                     let object = JSON.parse(cacheEntry.value);
@@ -25,13 +30,15 @@ module.exports = {
             }).catch(reject);
 
         });
-    },
-    evict: function (key) {
+    }
+    evict(key) {
         /**
          * NOTE, async-disk-cache does not offer a function to clear one key
          * but it does offer a function to clear all keys
          * TODO fork async-disk-cache and add function to clear one key
          */
-        return cache.clear(key);
+        return this.cache.clear(key);
     }
-};
+}
+
+module.exports = DiskCache;
