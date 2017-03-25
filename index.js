@@ -32,12 +32,7 @@ class DiskCache {
         });
     }
     evict(key) {
-        /**
-         * NOTE, async-disk-cache does not offer a function to clear one key
-         * but it does offer a function to clear all keys
-         * TODO fork async-disk-cache and add function to clear one key
-         */
-        return this.cache.clear(key);
+        return this.cache.remove(key);
     }
 }
 
