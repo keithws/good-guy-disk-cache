@@ -28,5 +28,17 @@ goodGuy('http://news.ycombinator.com').then(function(response) {
 });
 ```
 
+## Changelog
+
+_v2.1.1 – October 22, 2019_
+
+* upgraded all deps
+
+_v2.1.0 – March 24, 2017_
+
+* initial public release
+
+
 [good-guy-http]: https://www.npmjs.com/package/good-guy-http
 [async-disk-cache]: https://www.npmjs.com/package/async-disk-cache
+
