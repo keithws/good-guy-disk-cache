@@ -1,6 +1,6 @@
 {
   "name": "good-guy-disk-cache",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Async Disk Cache adapter for Good Guy HTTP",
   "main": "index.js",
   "scripts": {
