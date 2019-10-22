@@ -48,9 +48,9 @@
   },
   "homepage": "https://github.com/keithws/good-guy-disk-cache#readme",
   "dependencies": {
-    "async-disk-cache": "^1.2.2"
+    "async-disk-cache": "^1.3.4"
   },
   "devDependencies": {
-    "eslint": "^3.18.0"
+    "eslint": "^6.5.1"
   }
 }
